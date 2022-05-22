@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.FXMLDocumentController">
+   <children>
+      <ImageView fx:id="fondo" fitHeight="548.0" fitWidth="840.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#272829" height="454.0" layoutX="212.0" layoutY="47.0" opacity="0.95" stroke="BLACK" strokeType="INSIDE" width="397.0" />
+      <Text fill="#fda103" layoutX="281.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INICIAR SESIÓN">
+         <font>
+            <Font name="Century Gothic" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="icono" fitHeight="95.0" fitWidth="94.0" layoutX="364.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="Usuario" alignment="CENTER" layoutX="281.0" layoutY="293.0" prefHeight="26.0" prefWidth="260.0" promptText="USUARIO" style="-fx-border-color: #fda103; -fx-border-width: 0px 0px 5px 0px; -fx-background-color: WHITE;">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="Contra" alignment="CENTER" layoutX="281.0" layoutY="363.0" prefHeight="26.0" prefWidth="260.0" promptText="CONTRASEÑA" style="-fx-background-color: WHITE; -fx-border-color: #fda103; -fx-border-width: 0px 0px 5px 0px;">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font></PasswordField>
+      <Text fill="#23a9fc" layoutX="281.0" layoutY="443.0" onMouseClicked="#crearCuenta" strokeType="OUTSIDE" strokeWidth="0.0" text="CREAR CUENTA" />
+      <Text fx:id="errorInicio" fill="#e52424" layoutX="303.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="215.99996948242188" />
+      <Button layoutX="481.0" layoutY="425.0" mnemonicParsing="false" onMouseClicked="#iniciarS" style="-fx-background-color: TRANSPARENT; -fx-border-color: #fda103; -fx-border-radius: 7;" text="INICIAR" textFill="#fda103" />
+   </children>
+</AnchorPane>

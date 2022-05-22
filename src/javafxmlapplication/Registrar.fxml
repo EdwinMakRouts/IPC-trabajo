@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.RegistrarController">
+   <children>
+      <ImageView fx:id="fondo" fitHeight="548.0" fitWidth="840.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/W:/entregable/IPC_FXMLCore-master/build/classes/javafxmlapplication/fondo.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#272829" height="454.0" layoutX="212.0" layoutY="47.0" opacity="0.95" stroke="BLACK" strokeType="INSIDE" width="397.0" />
+      <Text fill="#fda103" layoutX="228.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRAR USUSARIO">
+         <font>
+            <Font name="Century Gothic" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="profile" fitHeight="95.0" fitWidth="94.0" layoutX="494.0" layoutY="137.0" onMouseClicked="#cambiar" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="nombre" layoutX="228.0" layoutY="137.0" prefHeight="32.0" prefWidth="245.0" promptText="NOMBRE DE USUARIO" style="-fx-border-color: #fda103; -fx-border-width: 0px 0px 5px 0px; -fx-background-color: WHITE;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="fecha" editable="false" layoutX="227.0" layoutY="197.0" prefHeight="34.0" prefWidth="246.0" promptText="FECHA DE NACIMIENTO ------------&gt;" style="-fx-border-color: #fda103; -fx-background-color: TRANSPARENT; -fx-border-width: 0px 0px 5px 0px;" />
+      <TextField fx:id="correo" layoutX="228.0" layoutY="257.0" prefHeight="34.0" prefWidth="336.0" promptText="CORREO ELECTRONICO" style="-fx-border-color: #fda103; -fx-border-width: 0px 0px 5px 0px; -fx-background-color: WHITE;">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="contra" layoutX="228.0" layoutY="311.0" prefHeight="34.0" prefWidth="336.0" promptText="CONTRASEÑA" style="-fx-background-color: WHITE; -fx-border-color: #fda103; -fx-border-width: 0px 0px 5px 0px;">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="contraR" layoutX="228.0" layoutY="364.0" prefHeight="34.0" prefWidth="336.0" promptText="REPITE LA CONTRASEÑA" style="-fx-background-color: WHITE; -fx-border-color: #fda103; -fx-border-width: 0px 0px 5px 0px;">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="511.0" layoutY="444.0" mnemonicParsing="false" onMouseClicked="#registrar" style="-fx-background-color: TRANSPARENT; -fx-border-color: #fda103; -fx-border-radius: 7;" text="REGISTRAR" textFill="#fda103" />
+      <Button layoutX="427.0" layoutY="444.0" mnemonicParsing="false" onMouseClicked="#cancelar" style="-fx-background-color: TRANSPARENT; -fx-border-color: #fc3c05; -fx-border-radius: 7;" text="CANCELAR" textFill="#fc3c05" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fda103" height="89.0" layoutX="620.0" layoutY="309.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
+      <Text layoutX="625.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA CONTRASEÑA DEBE TENER ALMENOS 8 CARACTERES, 1 MAYUSCULA Y MINUSCULA,  UN DIGITO, Y UN CARACTER ESPECIAL (!@#$%&amp;*()-+=) " wrappingWidth="170.0" />
+      <Text fx:id="error" fill="RED" layoutX="228.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fc3c05" height="80.0" layoutX="21.0" layoutY="145.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
+      <Text layoutX="26.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DE USUARIO ENTRE 6 Y 15 CARACTERES, Y QUE CONTENGA MAYUSCULAS, MINUSCULAS O GUIONES (- _-)" wrappingWidth="170.0" />
+   </children>
+</AnchorPane>

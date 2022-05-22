@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.9" prefHeight="402.0" prefWidth="600.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.MenuController">
+   <children>
+      <ImageView fx:id="fondo" fitHeight="400.0" fitWidth="626.0" layoutY="1.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../build/classes/javafxmlapplication/menu/FondoMenu1.jpg" />
+         </image>
+      </ImageView>
+      <Circle layoutX="550.0" layoutY="47.0" opacity="0.9" radius="27.0" stroke="#fda103" strokeType="INSIDE" />
+      <ImageView fx:id="logOut" fitHeight="43.0" fitWidth="32.0" layoutX="534.0" layoutY="31.0" onMouseClicked="#cerrarS" pickOnBounds="true" preserveRatio="true" style="-fx-image: #fda103;">
+         <image>
+            <Image url="@../../build/classes/javafxmlapplication/menu/icons8-salida-50.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="182.0" layoutY="47.0" mnemonicParsing="false" onMouseClicked="#realizarP" prefHeight="62.0" prefWidth="232.0" style="-fx-background-color: BLACK; -fx-border-color: WHITE; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 3px;" text="REALIZAR UN PROBLEMA ALEATORIO" textFill="WHITE" />
+      <Button layoutX="182.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#listaP" prefHeight="62.0" prefWidth="232.0" style="-fx-background-color: BLACK; -fx-border-color: #fc3c05; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 3px;" text="VER LISTA DE PROBLEMAS" textFill="#fc3c05" />
+      <Button layoutX="184.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#mostrarR" prefHeight="62.0" prefWidth="232.0" style="-fx-background-color: BLACK; -fx-border-color: #085ed7; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 3px;" text="MOSTRAR RESULTADOS" textFill="#085ed7" />
+      <Button layoutX="182.0" layoutY="294.0" mnemonicParsing="false" onMouseClicked="#editarP" prefHeight="62.0" prefWidth="232.0" style="-fx-background-color: BLACK; -fx-border-color: #05fc72; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 3px;" text="EDITAR PERFIL" textFill="#05fc72" />
+   </children>
+</Pane>
