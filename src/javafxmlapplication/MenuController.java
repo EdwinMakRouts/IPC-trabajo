@@ -116,8 +116,10 @@ public class MenuController implements Initializable {
             
         }
         
+        /**
         Stage stage = (Stage) fondo.getScene().getWindow();
         stage.hide();
+        **/
         
         FXMLLoader loader= new  FXMLLoader(getClass().getResource("Problema.fxml"));
         Parent rote = loader.load();
@@ -127,13 +129,16 @@ public class MenuController implements Initializable {
         stages.setTitle("Problema");
         stages.setMaxWidth(613);
         stages.setMaxHeight(488);
+        stages.show();
+        
+        /**
         stages.showAndWait();
         
         if (MenuController.hits != 0 || MenuController.errors != 0){
             MenuController.ses = new Session(MenuController.tiempo, MenuController.hits, MenuController.errors);
             a.addSession(MenuController.ses);  
         }
-        
+        */
     }
 
 
